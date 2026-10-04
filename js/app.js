@@ -13,7 +13,7 @@ function popupResult(result) {
   }
   if (result.src) {
   	html = '<img src="' + result.src + '" />' +
-    '<a href="'+ result.src +'" id="downloadlink" class="button" download="twibbon2019.jpg">Download</a>' +
+    '<a href="'+ result.src +'" id="downloadlink" class="button" download="twibbonbillkin.jpg">Download</a>' +
     '<button class="confirm button" tabindex="1">Cancel</button>';
   }
   swal({
@@ -31,7 +31,7 @@ function popupResult(result) {
 function drawFrame() {
   var img = new Image();
   img.crossOrigin = "Anonymous";
-  img.src = 'images/twibbon19.png';  
+  img.src = 'images/twb18.png';  
   img.onload = function() {
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     popupResult({
